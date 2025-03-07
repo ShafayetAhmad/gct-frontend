@@ -37,9 +37,11 @@ export default function RegisterPage() {
             backgroundPosition: "center 30%",
           }}
         />
-        <div className="relative z-20 flex items-center text-lg font-medium">
-          Greenwich Community Theatre
-        </div>
+        <Link href={"/"}>
+          <div className="relative z-20 flex items-center text-lg font-medium">
+            Greenwich Community Theatre
+          </div>
+        </Link>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <p className="text-lg">

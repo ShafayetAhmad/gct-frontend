@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
-            <span className="text-3xl font-bold tracking-tight">GCT</span>
+            <span className="text-2xl font-bold tracking-tight">GCT</span>
           </Link>
         </div>
 

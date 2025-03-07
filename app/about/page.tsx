@@ -360,7 +360,7 @@ export default function AboutPage() {
                       className="w-full h-full bg-cover bg-center"
                       style={{
                         backgroundImage:
-                          "url('url('https://picsum.photos/id/11/400?height=400&width=400')",
+                          "url('url('https://picsum.photos/id/15/400?height=400&width=400')",
                       }}
                     />
                   </div>
