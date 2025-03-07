@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/card";
 import HeroSection from "@/components/hero-section";
 import FeatureCard from "@/components/feature-card";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -128,7 +129,11 @@ export default function Home() {
                       </span>
                     </div>
                   </div>
-                  <Button className="w-full mt-6">View All Performances</Button>
+                  <Link href={"/performances"}>
+                    <Button className="w-full mt-6">
+                      View All Performances
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>
