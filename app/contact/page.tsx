@@ -16,8 +16,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import ContactForm from "@/components/contact-form";
 
 export const metadata: Metadata = {
@@ -29,7 +27,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative">
@@ -103,7 +100,10 @@ export default function ContactPage() {
                         variant="link"
                         className="p-0 h-auto mt-2 text-primary"
                       >
-                        <Link href="https://maps.google.com" target="_blank">
+                        <Link
+                          href="https://maps.app.goo.gl/ksdvRzNovKRkWg4A7"
+                          target="_blank"
+                        >
                           View on Map
                         </Link>
                       </Button>
@@ -386,7 +386,6 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -4,8 +4,6 @@ import { Calendar, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import TeamMember from "@/components/team-member";
 import TestimonialCard from "@/components/testimonial-card";
 
@@ -18,7 +16,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative">
@@ -609,7 +606,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

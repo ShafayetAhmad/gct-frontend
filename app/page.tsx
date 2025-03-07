@@ -1,16 +1,26 @@
-import { CalendarDays, CreditCard, MapPin, Star, Ticket, Users } from "lucide-react"
+import {
+  CalendarDays,
+  CreditCard,
+  MapPin,
+  Star,
+  Ticket,
+  Users,
+} from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Navbar from "@/components/navbar"
-import HeroSection from "@/components/hero-section"
-import FeatureCard from "@/components/feature-card"
-import Footer from "@/components/footer"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import HeroSection from "@/components/hero-section";
+import FeatureCard from "@/components/feature-card";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar />
       <main className="flex-1">
         <HeroSection />
 
@@ -21,7 +31,8 @@ export default function Home() {
               Experience Theatre Like Never Before
             </h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              Our new digital ticketing system brings convenience and innovation to your theatre experience.
+              Our new digital ticketing system brings convenience and innovation
+              to your theatre experience.
             </p>
           </div>
 
@@ -68,37 +79,53 @@ export default function Home() {
                   About Greenwich Community Theatre
                 </h2>
                 <p className="mt-4 text-muted-foreground">
-                  Nestled in southeast London, Greenwich Community Theatre (GCT) is a historic venue that blends
-                  Victorian architecture with a commitment to delivering high-quality, accessible performances since
-                  2000.
+                  Nestled in southeast London, Greenwich Community Theatre (GCT)
+                  is a historic venue that blends Victorian architecture with a
+                  commitment to delivering high-quality, accessible performances
+                  since 2000.
                 </p>
                 <p className="mt-4 text-muted-foreground">
-                  Our cozy auditorium and versatile stage hosts musicals, dramas, comedies, and children's theatre six
-                  days a week, with special matinees and performances.
+                  Our cozy auditorium and versatile stage hosts musicals,
+                  dramas, comedies, and children's theatre six days a week, with
+                  special matinees and performances.
                 </p>
               </div>
               <Card>
                 <CardHeader>
                   <CardTitle>Performance Schedule</CardTitle>
-                  <CardDescription>Join us for our upcoming shows</CardDescription>
+                  <CardDescription>
+                    Join us for our upcoming shows
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div className="flex justify-between border-b pb-2">
                       <span className="font-medium">Romeo and Juliet</span>
-                      <span className="text-muted-foreground">Mon-Sat, 7:30 PM</span>
+                      <span className="text-muted-foreground">
+                        Mon-Sat, 7:30 PM
+                      </span>
                     </div>
                     <div className="flex justify-between border-b pb-2">
                       <span className="font-medium">The Tempest</span>
-                      <span className="text-muted-foreground">Tue-Sun, 7:00 PM</span>
+                      <span className="text-muted-foreground">
+                        Tue-Sun, 7:00 PM
+                      </span>
                     </div>
                     <div className="flex justify-between border-b pb-2">
-                      <span className="font-medium">A Midsummer Night's Dream</span>
-                      <span className="text-muted-foreground">Wed-Mon, 8:00 PM</span>
+                      <span className="font-medium">
+                        A Midsummer Night's Dream
+                      </span>
+                      <span className="text-muted-foreground">
+                        Wed-Mon, 8:00 PM
+                      </span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="font-medium">Children's Special: Peter Pan</span>
-                      <span className="text-muted-foreground">Sat, 2:00 PM</span>
+                      <span className="font-medium">
+                        Children's Special: Peter Pan
+                      </span>
+                      <span className="text-muted-foreground">
+                        Sat, 2:00 PM
+                      </span>
                     </div>
                   </div>
                   <Button className="w-full mt-6">View All Performances</Button>
@@ -115,7 +142,8 @@ export default function Home() {
               Ready to Experience the New GCT?
             </h2>
             <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              Register now to access our new digital ticketing system and enjoy special discounts.
+              Register now to access our new digital ticketing system and enjoy
+              special discounts.
             </p>
             <div className="flex flex-col gap-2 sm:flex-row mt-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -128,8 +156,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
-  )
+  );
 }
-
