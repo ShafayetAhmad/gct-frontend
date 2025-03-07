@@ -1,19 +1,26 @@
-import type { Metadata } from "next"
-import { Calendar, Filter, Search } from "lucide-react"
+import type { Metadata } from "next";
+import { Calendar, Filter, Search } from "lucide-react";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import PerformanceCard from "@/components/performance-card"
-import FeaturedPerformance from "@/components/featured-performance"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import PerformanceCard from "@/components/performance-card";
+import FeaturedPerformance from "@/components/featured-performance";
 
 export const metadata: Metadata = {
   title: "Performances | Greenwich Community Theatre",
-  description: "Browse current and upcoming performances at Greenwich Community Theatre",
-}
+  description:
+    "Browse current and upcoming performances at Greenwich Community Theatre",
+};
 
 export default function PerformancesPage() {
   return (
@@ -26,7 +33,8 @@ export default function PerformancesPage() {
           <div
             className="h-[400px] bg-cover bg-center"
             style={{
-              backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+              backgroundImage:
+                "url('https://www.theatrestrust.org.uk/assets/000/001/422/Greenwich_Festival_Theatre_-_Gravity_Design_detail.jpg?1561121308')",
               backgroundPosition: "center 30%",
             }}
           />
@@ -39,7 +47,8 @@ export default function PerformancesPage() {
                     Our Performances
                   </h1>
                   <p className="mx-auto max-w-[700px] text-white md:text-xl">
-                    Discover the magic of live theatre at Greenwich Community Theatre
+                    Discover the magic of live theatre at Greenwich Community
+                    Theatre
                   </p>
                 </div>
               </div>
@@ -71,7 +80,11 @@ export default function PerformancesPage() {
                 </label>
                 <div className="relative">
                   <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-                  <Input id="search" placeholder="Search by title, actor, or director..." className="pl-8" />
+                  <Input
+                    id="search"
+                    placeholder="Search by title, actor, or director..."
+                    className="pl-8"
+                  />
                 </div>
               </div>
               <div className="w-full md:w-[180px] space-y-2">
@@ -298,10 +311,13 @@ export default function PerformancesPage() {
         <section className="bg-muted/50 py-12 md:py-24">
           <div className="container">
             <div className="max-w-3xl mx-auto text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter mb-4">Ticket Information</h2>
+              <h2 className="text-3xl font-bold tracking-tighter mb-4">
+                Ticket Information
+              </h2>
               <p className="text-muted-foreground">
-                Our ticket prices vary depending on the performance and seating location. Special discounts are
-                available for children, OAPs, and group bookings.
+                Our ticket prices vary depending on the performance and seating
+                location. Special discounts are available for children, OAPs,
+                and group bookings.
               </p>
             </div>
 
@@ -310,29 +326,61 @@ export default function PerformancesPage() {
                 <div className="text-center mb-4">
                   <h3 className="text-xl font-bold">Band A</h3>
                   <p className="text-primary text-2xl font-bold mt-2">£45</p>
-                  <p className="text-muted-foreground text-sm">Premium Seating</p>
+                  <p className="text-muted-foreground text-sm">
+                    Premium Seating
+                  </p>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Best views of the stage</span>
                   </li>
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Center and front sections</span>
                   </li>
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Complimentary program</span>
@@ -345,29 +393,61 @@ export default function PerformancesPage() {
                 <div className="text-center mb-4">
                   <h3 className="text-xl font-bold">Band B</h3>
                   <p className="text-primary text-2xl font-bold mt-2">£35</p>
-                  <p className="text-muted-foreground text-sm">Standard Seating</p>
+                  <p className="text-muted-foreground text-sm">
+                    Standard Seating
+                  </p>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Good views of the stage</span>
                   </li>
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Side sections and mid-rear</span>
                   </li>
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Great value for money</span>
@@ -380,29 +460,61 @@ export default function PerformancesPage() {
                 <div className="text-center mb-4">
                   <h3 className="text-xl font-bold">Band C</h3>
                   <p className="text-primary text-2xl font-bold mt-2">£25</p>
-                  <p className="text-muted-foreground text-sm">Economy Seating</p>
+                  <p className="text-muted-foreground text-sm">
+                    Economy Seating
+                  </p>
                 </div>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Rear and side sections</span>
                   </li>
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Budget-friendly option</span>
                   </li>
                   <li className="flex items-start">
                     <span className="bg-primary/10 p-1 rounded-full mr-2 mt-1">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="h-3 w-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </span>
                     <span>Perfect for large groups</span>
@@ -417,19 +529,27 @@ export default function PerformancesPage() {
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <div className="p-4 border rounded-md">
                   <h4 className="font-bold">Children</h4>
-                  <p className="text-muted-foreground">25% off standard prices for under 16s</p>
+                  <p className="text-muted-foreground">
+                    25% off standard prices for under 16s
+                  </p>
                 </div>
                 <div className="p-4 border rounded-md">
                   <h4 className="font-bold">OAPs</h4>
-                  <p className="text-muted-foreground">25% off standard prices</p>
+                  <p className="text-muted-foreground">
+                    25% off standard prices
+                  </p>
                 </div>
                 <div className="p-4 border rounded-md">
                   <h4 className="font-bold">Group Bookings</h4>
-                  <p className="text-muted-foreground">5% discount, plus additional 5% for 20+ tickets</p>
+                  <p className="text-muted-foreground">
+                    5% discount, plus additional 5% for 20+ tickets
+                  </p>
                 </div>
                 <div className="p-4 border rounded-md">
                   <h4 className="font-bold">Last Hour Bookings</h4>
-                  <p className="text-muted-foreground">10% discount for in-person bookings in the last hour</p>
+                  <p className="text-muted-foreground">
+                    10% discount for in-person bookings in the last hour
+                  </p>
                 </div>
               </div>
             </div>
@@ -439,9 +559,12 @@ export default function PerformancesPage() {
         {/* Theatre Packages */}
         <section className="container py-12 md:py-24">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter mb-4">Theatre Packages</h2>
+            <h2 className="text-3xl font-bold tracking-tighter mb-4">
+              Theatre Packages
+            </h2>
             <p className="text-muted-foreground">
-              Enhance your theatre experience with our special packages and offers.
+              Enhance your theatre experience with our special packages and
+              offers.
             </p>
           </div>
 
@@ -454,8 +577,9 @@ export default function PerformancesPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Season Pass</h3>
                   <p className="text-muted-foreground mb-4">
-                    Book 4 plays and get 1 ticket free. The perfect way to experience our diverse range of performances
-                    throughout the season.
+                    Book 4 plays and get 1 ticket free. The perfect way to
+                    experience our diverse range of performances throughout the
+                    season.
                   </p>
                   <Button>Learn More</Button>
                 </div>
@@ -470,8 +594,8 @@ export default function PerformancesPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-2">Weekday Special</h3>
                   <p className="text-muted-foreground mb-4">
-                    Enjoy a 10% discount on all performances scheduled Monday through Thursday. Perfect for a midweek
-                    cultural escape.
+                    Enjoy a 10% discount on all performances scheduled Monday
+                    through Thursday. Perfect for a midweek cultural escape.
                   </p>
                   <Button>Learn More</Button>
                 </div>
@@ -482,6 +606,5 @@ export default function PerformancesPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
-

@@ -37,7 +37,8 @@ export default function ContactPage() {
           <div
             className="h-[400px] bg-cover bg-center"
             style={{
-              backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+              backgroundImage:
+                "url('https://i.ibb.co/0pMnVhp6/457591924-18436479982071776-8445367628745072321-n.jpg?height=1080&width=1920')",
               backgroundPosition: "center 30%",
             }}
           />
